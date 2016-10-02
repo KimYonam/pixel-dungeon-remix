@@ -100,6 +100,7 @@ public class Assets {
 	public static final String TILES_SPIDER_NEST_X = "tiles_spiders_nest_x.png";
 	public static final String TILES_SEWERS = "tiles0.png";
 	public static final String TILES_SEWERS_X = "tiles0_x.png";
+	public static final String TILES_SEWERS_X_BOSS = "tiles0_boss_x.png";
 	public static final String TILES_PRISON = "tiles1.png";
 	public static final String TILES_PRISON_BOSS = "tiles1_boss.png";
 	public static final String TILES_CAVES = "tiles2.png";
@@ -128,7 +129,8 @@ public class Assets {
 	public static final String THEME = "theme.mp3";
 	public static final String TUNE = "game.mp3";
 	public static final String HAPPY = "surface.mp3";
-
+	public static final String BOSS_1_F = "ost_boss_1_fight.mp3";
+	public static final String BOSS_1_A = "ost_boss_1_ambient.mp3";
 	public static final String SND_CLICK = "snd_click.mp3";
 	public static final String SND_BADGE = "snd_badge.mp3";
 	public static final String SND_GOLD = "snd_gold.mp3";

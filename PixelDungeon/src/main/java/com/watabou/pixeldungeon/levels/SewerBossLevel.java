@@ -17,7 +17,10 @@
  */
 package com.watabou.pixeldungeon.levels;
 
+import android.support.annotation.NonNull;
+
 import com.nyrds.pixeldungeon.ml.R;
+import com.nyrds.pixeldungeon.utils.DungeonGenerator;
 import com.watabou.noosa.Game;
 import com.watabou.noosa.Scene;
 import com.watabou.pixeldungeon.Assets;
@@ -52,14 +55,25 @@ public class SewerBossLevel extends RegularLevel {
 	
 	@Override
 	public String tilesTexEx() {
-		return Assets.TILES_SEWERS_X;
+		return Assets.TILES_SEWERS_X_BOSS;
 	}
 	
 	@Override
 	public String waterTex() {
 		return Assets.WATER_SEWERS;
 	}
-	
+
+
+	@Override
+	@NonNull
+	public String music() {
+		String ret = DungeonGenerator.music(levelId);
+		if(ret == null) {
+			ret = Assets.BOSS_1_A;
+		}
+		return ret;
+	}
+
 	@Override
 	protected boolean build() {
 		
